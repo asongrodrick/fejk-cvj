@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><meta charset='utf-8'><title>Portfolio</title></head>
+<body>
+<h1>Projects (served by Django backend)</h1>
+<div id='projects'></div>
+<script>
+fetch('/api/projects/')
+  .then(r => r.json())
+  .then(data => {
+    const wrap = document.getElementById('projects');
+    if(!data.projects || data.projects.length===0){wrap.innerHTML='<p>No projects yet</p>'; return}
+    data.projects.forEach(p => {
+      const d = document.createElement('div');
+      d.innerHTML = `<h3>${p.title}</h3><p>${p.description}</p><p><a href='${p.project_url}'>View</a></p>`;
+      wrap.appendChild(d);
+    })
+  })
+  .catch(err => console.error(err));
+</script>
+</body>
+</html>

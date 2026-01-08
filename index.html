@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>My Portfolio</h2>
+    <div class="hamburger" id="hamburger">☰</div>
+    <ul id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="darkModeToggle">🌙</button>
+  </nav>
+
+  <section class="hero" id="hero">
+    <h1>Hello, I'm <span class="highlight">ASONLEFAC RODRICK NKENGSONG</span></h1>
+    <p>A passionate Developer | Designer.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <img src="ho.jpg" alt="Profile">
+    <p>
+      Welcome to my portfolio! I am a developer passionate about creating modern, responsive,
+      and user-friendly websites and applications. This site is like my CV, showing my skills,
+      projects, and how to reach me.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-bar">
+      <span>HTML</span>
+      <div class="progress"><div data-width="90%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>CSS</span>
+      <div class="progress"><div data-width="80%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Hardware Maintainance</span>
+      <div class="progress"><div data-width="75%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>JavaScript</span>
+      <div class="progress"><div data-width="30%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Software Maintenance</span>
+      <div class="progress"><div data-width="60%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Graphic Designing</span>
+      <div class="progress"><div data-width="70%"></div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="fe.jpg" alt="Project">
+        <div class="content">
+          <h3>Project One</h3>
+          <p>A cool project I worked on showcasing my skills.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="re.jpg" alt="Project">
+        <div class="content">
+          <h3>Project Two</h3>
+          <p>Another amazing project with modern features.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="go.jpg" alt="Project">
+        <div class="content">
+          <h3>Project Three</h3>
+          <p>This project demonstrates creativity and problem-solving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+<section class="certificate_obtained" id="certificate_obtained">
+  <h2>These are my professional certificate in tech which i have obtained all through out my studies and I'm not just limitting myself to this but I'm diong my best to get more powerful certifictes and gain alot of skills</h2>
+</section>
+  <footer>
+    <p>&copy; 2025 ASONLEFAC RODRICK NKENGSONG. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
